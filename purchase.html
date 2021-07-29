@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- What the page is -->
+    <meta name="description" content="This is the page covering Animals and Plants">
+    <!-- Page title -->
+    <title>Animals</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/purchase&dono.css">
+    <!-- Inserting the favicon near the title -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+    <link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header id="marquee">
+    <h1>Purchase and Donate</h1>
+</header>
+<nav class="navigation">
+    <!-- Other Webpages -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="#">Dehiwala Zoo</a>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                    <span></span>
+                </label>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="animals.html">Animals and Plants</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="purchase.html">Purchase and Donate</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="widget-outer-container" class="width-100">
+            <div class="widget-header">
+                <h2>Purchase</h2>
+            </div>
+            <div class="clearfix">
+                <button id="loyalty-score-check" class="float-r btn-normal margin-r-5">Check Loyalty Score</button>
+            </div>
+            <div id="widget-body" class="width-100 flex-container flex-row">
+                <div id="price-list-section" class="padding-margin-10">
+                    <table border="1" class="table-header-color-purple table-border-1 ta">
+                        <tr>
+                            <th>Item</th>
+                            <th>Price(LKR)</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" >Day Pass</th>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Adult</td>
+                            <td class="padding-10">1000.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Child</td>
+                            <td class="padding-10">500.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="padding-10">Student Pass</th>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Adult</td>
+                            <td class="padding-10">500.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Child</td>
+                            <td class="padding-10">250.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Foreign Pass</th>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Adult</td>
+                            <td class="padding-10">5000.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Child</td>
+                            <td class="padding-10">2500.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Time Extensions</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="padding-10">All the passes are valid for 3 hours</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Half Day</td>
+                            <td class="padding-10">pass+250.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Full Day</td>
+                            <td class="padding-10">pass+500.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Two Day</td>
+                            <td class="padding-10">pass+1000.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Extras</th>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Annual Pass</td>
+                            <td class="padding-10">5000.00</td>
+                        </tr>
+                        <tr>
+                            <td class="padding-10">Food Token</td>
+                            <td class="padding-10">500.00</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="purchase-widget flex-container flex-col">
+                    <div id="current-ticket-widget">
+                        <form class="flex-container flex-row width-100 padding-margin-10 width-100 flex-wrap">
+                            <div id="item-type-section" class="form-section flex-container flex-row">
+                                <label for="item-type-selection" class="margin-r-5">Item Type</label>
+                                <select class="input-dropdown height-fitContent media-full-width" id="item-type-selection">
+                                    <option value="0">Please select a value</option>
+                                    <option value="1">Day Pass</option>
+                                    <option value="2">Student Pass</option>
+                                    <option value="3">Foreigner Pass</option>
+                                    <option value="4">Extras</option>
+                                </select>
+                            </div>
+                            <div id="extra-type-section" class="form-section flex-container flex-row display-none">
+                                <label for="extra-type-selection" class="margin-r-5">Extra Type</label>
+                                <select id="extra-type-selection" class="input-dropdown height-fitContent media-full-width">
+                                    <option value="0">Please select a value</option>
+                                    <option value="1">Annual Pass</option>
+                                    <option value="2">Food Token</option>
+                                </select>
+                            </div>
+                            <div id="num-qty-section" class="form-section flex-container flex-row flex-align-items-baseline">
+                                <div id="pass-section">
+                                    <div class="width-005vw-height-a">
+                                        <label for="children-num" class="float-l">No. of Children</label>
+                                        <input class="width-100 float-r" min="0" type="number" id="children-num">
+                                    </div>
+                                    <div class="width-005vw-height-a">
+                                        <label for="adult-num" class="float-l">No. of Adults</label>
+                                        <input class="width-100 float-r" min="0" type="number" id="adult-num">
+                                    </div>
+                                </div>
+
+                                <div id="token-section" class="display-none">
+                                    <lable for="token-quantity">Quantity</lable>
+                                    <input class="width-100 float-r" min="0" type="number" id="token-quantity">
+                                </div>
+
+                            </div>
+                            <div id="duration-section" class="form-section flex-container flex-row">
+                                <label for="duration-selection" class="margin-r-5">Duration</label>
+                                <select class="input-dropdown height-fitContent" id="duration-selection">
+<!--                                    <option value="0">Please select a value</option>-->
+                                    <option value="0">3 hours</option>
+                                    <option value="1">Half day</option>
+                                    <option value="2">Full day</option>
+                                    <option value="3">2 days</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="current-order" class="inner-container-current-order">
+                        <div id="current-order-header" class="padding-10 dark-grey  clearfix">
+                            <h3 class="display-inline-block float-l" >Current Order</h3>
+                            <button disabled id="add-to-order-button" class="float-r btn-normal">Add to Order</button>
+                            <button disabled id="fav-save-order-button" class="float-r btn-normal margin-r-5">Save Order</button>
+                            <button disabled id="fav-load-order-button" class="float-r btn-normal margin-r-5">Load Favorite Order</button>
+                        </div>
+                        <div id="current-order-body" class="flex-container flex-col padding-margin-10">
+                            <div>
+                                <h4>Order Type: <span id="order-type">-</span></h4><br>
+                            </div>
+                            <div id="current-order-pass">
+                                <h4>Children: <span id="children-count">0</span></h4>
+                                <h4>Adults: <span id="adult-count">0</span></h4><br>
+                                <h4>Duration: <span id="duration-field">Three Hours</span></h4>
+                            </div>
+                            <div id="current-order-extra" class="display-none">
+                                <h4>Extra type: <span id="extra-type">0</span></h4>
+                                <h4>Quantity: <span id="quantity-count">0</span></h4>
+                            </div>
+                            <br>
+                            <div class="padding-margin-10">
+                                <h4>Current Order Total: <span id="current-order-total">LKR0</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="overall-order" class="inner-container-current-order">
+                        <div id="overall-order-header" class="padding-10 dark-grey  clearfix">
+                            <h3 class="display-inline-block float-l">Overall Order</h3>
+                            <button disabled id="place-order-button" class="float-r btn-normal">Place Order</button>
+                        </div>
+                        <div id="overall-order-body" class="flex-container flex-col padding-margin-10 flex-center">
+                            <table id="overall-order-table" class="table-header-color-purple text-center table-border-1 font-whiteSpace-preWrap">
+                                <tr>
+                                    <th>Item Type</th>
+                                    <th>Quantity</th>
+                                    <th>Price(LKR)</th>
+                                </tr>
+                                <tr></tr>
+                            </table>
+                            <div class="padding-margin-10">
+                                <h3>Overall Order Total: <span id="overall-order-total">LKR0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-header">
+                <h2 class="text-center padding-margin-10">Donation</h2>
+            </div>
+            <div id="donations-widget">
+                <div class="flex-test">
+                    <form class="flex-test width-100 padding-margin-10 width-100 donation-form-styles form-div" id="donations-form">
+                        <div>
+                            <label for="item-type-selection" class="margin-r-5 max-width-input">Donation Amount</label><br>
+                            <select class="input-dropdown donation-input height-fitContent media-full-width" id="donation-amount">
+                                <option value="0">Please select a value</option>
+                                <option value="1">250</option>
+                                <option value="2">500</option>
+                                <option value="3">1000</option>
+                                <option value="4">2500</option>
+                                <option value="5">5000</option>
+                                <option value="6">10000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input autocomplete="off" type="text" placeholder="Please enter your name" id="name-input" class="padding-10 donation-input">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Please enter your E-mail Address" id="email-input" class="padding-10 donation-input">
+                        </div>
+                        <div id="credit-card-group" class="credit-card-group">
+                            <label>Card Details</label><br>
+                            <input type="number" placeholder="Credit Card Number" id="cc-number-input" class="donation-input">
+                            <input type="number" placeholder="MM/YY" id="cc-exp-input" class="max-width-input donation-input">
+                            <input type="number" placeholder="CVC" id="cc-cvc-input" class="max-width-input donation-input">
+                        </div>
+                        <div class="clearfix">
+                            <button id="donation-confirm-button" class="btn-normal">Confirm Donation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- List of other places to see animals in Sri Lanka -->
+        <h2>Other Animal Paradises available in Sri Lanka:</h2>
+        <nav>
+            <ul>
+                <li><a href="http://nationalzoo.gov.lk/elephantorphanage/" target="_blank">Pinnawala Elephant Orphanage</a></li>
+                <li><a href="http://nationalzoo.gov.lk/zoo/safari-park/" target="_blank">Ridiyagama Safari Park</a></li>
+                <li><a href="https://www.udawalawenationalpark.com/" target="_blank">Udawalawe National Park</a></li><br>
+            </ul>
+        </nav>
+        <p>&copy;Developed by: Tharula Weerasinghe (cb009166@students.apiit.lk)</p>
+    </footer>
+    <script src="Script/purchase.js"></script>
+    <script src="Script/donation.js"></script>
+</body>
+</html>

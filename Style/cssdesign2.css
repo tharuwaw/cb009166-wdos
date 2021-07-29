@@ -1,0 +1,94 @@
+/* Applied styling to the header */
+.name{
+        width: auto;
+        margin: 0 auto;
+        background: #F7D7B5;
+        padding: 5px 20px;
+        font-size: 3em;
+        text-align: center;
+        color: #474747;
+}
+
+/* Applied styling to the links for other webpages of the site */
+.navigation a{
+        background-repeat: no-repeat;
+        font-size: x-large;
+        background-size: 40px auto;
+        background-position: 0.5em center;
+        min-height: 50px;
+        line-height: 50px;
+        color: rgb(17,17,17);
+        box-sizing: border-box;
+        display: inline-block;
+        text-decoration: underline cyan;
+        padding: 16px 24px;
+}
+    
+.navigation a:hover{
+        background-color: #ff7b00;
+        box-sizing: border-box;
+        display: inline-block;
+}
+
+.navigation{
+    position: sticky;
+    top: 0;
+}
+
+/* Applied styling in general */
+main{
+    padding: 1em;
+    margin: 0;
+    background-color: #dad9d8;
+}
+
+/* Applied styling to the footer */
+footer{
+    background:#F7D7B5 ;
+    padding: 2em;
+    text-decoration: none;
+    color: brown;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ff7b00;
+}
+
+/* Applied styling to introduction */
+.introduction{
+    font-size: xx-large;
+    color: darkgoldenrod;
+}
+
+/* Applied styling to the main image */
+#mainImg{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    align:left;
+}
+
+/* Applied styling to an image within a section */
+.part img{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    align:left;
+}
+
+/* Applied styling to the sections */
+.part1{
+    font-size: x-large;
+    color: rgb(11, 184, 175);
+}
+
+.part2{
+    font-size: large;
+}
+
+#mainImg:hover{
+    transform: rotate(45deg);
+}

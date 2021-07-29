@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- What the page is -->
+    <meta name="description" content="Webpage informing the means of contacting us">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- Inserting the favicon near the title -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+<link rel="manifest" href="Images/site.webmanifest">
+<link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <header id="marquee">
+        <h1>Contact Us</h1>
+      </header>
+      <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+               <div class="logo">
+                 <a href="#">Dehiwala Zoo</a>
+               </div>
+               <input type="checkbox" id="nav-check">
+               <label for="nav-check" class="nav-toggler">
+                  <span></span>
+               </label>
+               <nav class="nav">
+                  <ul>
+                     <li><a href="index.html" class="active">Home</a></li>
+                     <li><a href="animals.html">Animals and Plants</a></li>
+                     <li><a href="activities.html">Activities</a></li>
+                     <li><a href="purchase.html">Purchase and Donate</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                    
+                  </ul>
+               </nav>
+            </div>
+        </div>
+      </header>
+      <main>
+        <p class="text">Do you have any complaints or suggestions regarding any aspect of our service? 
+            Please be kind enough to fill and submit the following form so that we could improve our service.<br><br>
+        </p>
+        <!-- Suggestion Form -->
+        <form>
+                <fieldset>
+                    <legend>Suggestion and Complaint Form:</legend>
+                Name     <input type="text" name="name" size="150"><br><br>
+                Email    <input type="text" name="email" size="100"><br><br>
+                Tel No.  <input type="tel" name="tel" size="10"><br><br>
+                <!-- Asking to select the area which the complaint/suggestion is in -->
+                Select our aspect: <select name="aspect">
+                    <option>Animals</option>
+                    <option>Plants</option>
+                    <option>Activities</option>
+                    <option>Website</option>
+                    <option>Animal/Plant Treatment</option>
+                    <option>Customer Service</option>
+                    <option>Other</option>
+                </select><br><br>
+                <!-- Comments -->
+                Your thoughts;  <textarea cols="50" rows="5"></textarea><br><br>
+                <!-- This can be used to categorize the feedback -->
+                Are you satisfied overall?:
+                Yes<input type="radio" name="happy" checked>
+                No<input type="radio" name="happy"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </fieldset>
+            </form>
+           </main>
+       <footer>
+        <!-- List of other places to see animals in Sri Lanka -->
+        <h2>Other Animal Paradises available in Sri Lanka:</h2>
+        <nav>
+          <ul>
+            <li><a href="http://nationalzoo.gov.lk/elephantorphanage/" target="_blank">Pinnawala Elephant Orphanage</a></li>
+            <li><a href="http://nationalzoo.gov.lk/zoo/safari-park/" target="_blank">Ridiyagama Safari Park</a></li>
+            <li><a href="https://www.udawalawenationalpark.com/" target="_blank">Udawalawe National Park</a></li><br>
+          </ul>
+        </nav>
+        <p>&copy;Developed by: Tharula Weerasinghe (cb009166@students.apiit.lk)</p>
+        </footer>
+  </body>
+  </html>

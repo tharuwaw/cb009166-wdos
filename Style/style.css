@@ -1,0 +1,374 @@
+/* Applied styling to all fonts */
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+/* Applied styling to headings */
+h1,h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5em 0;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: #474747;
+}
+
+/* Applied styling to headers and footers */
+header,footer{
+    background:#F7D7B5 ;
+    padding: 1em;
+}
+
+/* Applied styling to the links to access other webpages */
+:root{
+    --color-1: #673ab7;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.justify-content-between{
+	justify-content: space-between;
+}
+
+
+/* Applied styling to headers */
+.header{
+	background-color: var(--color-1);
+	padding:12px 0;
+	position: relative;
+}
+
+.header .logo,
+.header .nav{
+	padding:0 15px;
+}
+
+.header .logo a{
+	font-size: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.header .nav ul li a{
+	display: block;
+	font-size: 16px;
+	padding:10px 0;
+	color: rgba(255,255,255,0.7);
+	text-transform: capitalize;
+	transition: all 0.5s ease;
+}
+
+.header .nav ul li a:hover,
+.header .nav ul li a.active{
+	color: #ffffff;
+}
+
+.header #nav-check{
+	position: absolute;
+	opacity:0;
+	pointer-events: none;
+}
+
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.nav-toggler span{
+	display: block;
+	height: 2px;
+	width: 20px;
+	background-color: var(--color-1);
+	position: relative;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   left:0;
+}
+
+.nav-toggler span::before{
+	top: -6px;
+}
+
+.nav-toggler span::after{
+	top: 6px;
+}
+
+/* Making it responsive */
+@media(max-width: 991px){
+    .nav-toggler{
+    	display: flex;
+    }
+
+    .header .nav{
+    	position: absolute;
+    	left:0;
+    	top:100%;
+    	width: 100%;
+    	background-color: var(--color-1);
+    	border-top: 1px solid rgba(255,255,255,0.2);
+    	opacity:0;
+    	visibility: hidden;
+    }
+
+    .header .nav ul li{
+    	display: block;
+    	margin:0;
+    }
+
+    .header #nav-check:checked ~ .nav{
+       opacity: 1;
+       visibility: visible;
+    }
+
+    .header #nav-check:focus ~ .nav-toggler{
+    	box-shadow: 0 0 15px #000000;
+    }
+
+    .header #nav-check:checked ~ .nav-toggler span{
+    	background-color: transparent;
+    }
+
+    .header #nav-check:checked ~ .nav-toggler span::before{
+    	top:0;
+    	transform: rotate(45deg);
+    }
+
+    .header #nav-check:checked ~ .nav-toggler span::after{
+    	top:0;
+    	transform: rotate(-45deg);
+    }
+}
+
+
+/* Applied styling to the header 
+#marquee{
+    width: auto;
+    margin: 0 auto;
+    background: #F7D7B5;
+}
+/* Applied styling to the links for other webpages of the site 
+.navigation{
+    position: sticky;
+    top: 0;
+}
+
+.navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #F7D7B5;
+    flex-flow: row wrap;
+}
+
+.navigation li{
+    flex-grow: 1;
+    width: calc(25%-0.2em);
+    border: 1em  solid;
+}
+
+.options{
+    padding-left: 60px;
+}
+
+.navigation a{
+    background-repeat: no-repeat;
+    font-size: larger;
+    background-size: 40px auto;
+    background-position: 0.5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: rgb(17,17,17);
+}
+
+.navigation a:hover{
+    background-color: #ff7b00;
+}
+
+/* Applied styling to main image of homepage */
+#bigPic{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+footer ul{
+    list-style-type: square;
+    padding: 0;
+    margin-left: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: brown;
+    line-height: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ff7b00;
+}
+
+h2{
+    color: cornflowerblue;
+}
+
+/* Applied styling to the content in general */
+main{
+    padding: 1em;
+    margin: 0;
+    background-color: #dad9d8;
+}
+
+/* Applied styling to the small image in homepage */
+#subImg{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    align:left;
+}
+
+/* Applied styling to the flexboxes in Animals part */
+#animals img{
+    max-width: 290px;
+}
+
+#animals{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+#animals .flex{
+    margin: 0.8em 0.2em;
+    width: calc(33%-0.4em);
+   box-sizing: content-box;
+   box-shadow: 0 19px 38px rgba(0,0,0, 0.3), 0 15px 12px rgba(0,0,0, 0.22);
+   background-color: rgba(225,224,179, 0.2);
+}
+
+#animals h2, #animals p{
+    width: 90%;
+    padding: 0%;
+    margin: 1em auto;
+}
+
+/* Applied styling to the part where plants are being introduced */
+#heading{
+    color: black;
+}
+
+/* Applied styling to the table of plants part */
+#table{
+   font-size: large;
+}
+
+th{
+    text-align: center justify;
+}
+
+.timg{
+    height: 350px;
+}
+
+.topic{
+    background-color: chartreuse;
+}
+
+#plants{
+    width: 100%;
+}
+
+/* Applied styling to the part where activities are introduced */
+.text{
+    font-size: larger;
+}
+
+/* Applied styling to the images in activities page */
+.image{
+    height: 400px;
+    width: 500px;
+}
+
+/* Applied styling to the important details about activities */
+ol{
+    color: crimson;
+    font-size: larger;
+}
+
+/* Applied styling to the form */
+form{
+    width: auto;
+}
+
+/* Making it responsive */
+@media(max-width:1024px){
+    .responsive {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+#extra a {
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+        padding: 16px 24px;
+}
+    
+#extra a:hover {
+        background: #ff9f1c;
+        color: black;
+}
